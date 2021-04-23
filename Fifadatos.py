@@ -50,3 +50,10 @@ plt.title('Different Nations Participating in FIFA 2019', fontsize = 30, fontwei
 plt.xlabel('Name of The Country')
 plt.ylabel('count')
 plt.show()
+
+# Comparar el rendimiento de futbolistas zurdos y diestros.
+# control de balón vs dribling. 
+# Regresion Lineal.
+
+sns.lmplot(x = 'BallControl', y = 'Dribbling', data = data, col = 'Preferred Foot')
+plt.show()
